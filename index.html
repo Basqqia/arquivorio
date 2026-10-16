@@ -5,68 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Feed</title>
   <style>
-    /* Reset básico */
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
 
-    /* Fundo branco */
     body {
-      background-color: #ffffff;
+      background-color: #ffffff !important;
       display: flex;
       flex-direction: column;
       align-items: center;
       min-height: 100vh;
-      padding: 0; /* Sem espaçamento nas bordas da tela */
+      margin: 0;
     }
 
-    /* Container do feed */
     .feed-container {
       width: 100%;
-      max-width: 420px; /* Largura ideal para telas de celular */
+      max-width: 420px;
       display: flex;
       flex-direction: column;
-      gap: 12px; /* Espaço reto entre uma foto e outra */
+      gap: 0px;
     }
 
-    /* Cartão só com a imagem */
     .card {
       display: block;
       text-decoration: none;
       width: 100%;
     }
 
-    /* Imagem reta e sem cantos arredondados */
     .card-image {
       width: 100%;
       height: auto;
       display: block;
-      border-radius: 0; /* Garante cantos totalmente retos */
+      border-radius: 0 !important;
     }
   </style>
 </head>
 <body>
 
-  <!-- Container com a sequência de fotos soltas -->
   <div class="feed-container">
-
-    <!-- Foto 1 -->
     <a href="https://seu-link-aqui.com" class="card" target="_blank">
       <img src="583152323_17905895124272252_1555963115671299156_n.jpg" alt="Imagem 1" class="card-image">
     </a>
 
-    <!-- Foto 2 -->
     <a href="https://seu-link-aqui.com" class="card" target="_blank">
       <img src="foto2.jpg" alt="Imagem 2" class="card-image">
     </a>
 
-    <!-- Foto 3 -->
     <a href="https://seu-link-aqui.com" class="card" target="_blank">
       <img src="foto3.jpg" alt="Imagem 3" class="card-image">
     </a>
-
   </div>
 
 </body>
