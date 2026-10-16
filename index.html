@@ -1,1 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feed de Links</title>
+  <style>
+    /* Reset básico */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
 
+    /* Fundo da página */
+    body {
+      background-color: #0f172a; /* Tom escuro elegante */
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 24px 12px;
+    }
+
+    /* Título do Feed (opcional) */
+    .header-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #94a3b8;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    /* Container centralizado para celular */
+    .feed-container {
+      width: 100%;
+      max-width: 420px; /* Largura ideal para telas mobile */
+      display: flex;
+      flex-direction: column;
+      gap: 20px; /* Espaço entre os cartões */
+    }
+
+    /* Cartão individual */
+    .card {
+      display: block;
+      background-color: #1e293b;
+      border-radius: 16px;
+      overflow: hidden; /* Mantém a imagem dentro dos cantos arredondados */
+      text-decoration: none;
+      color: #ffffff;
+      border: 1px solid #334155;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+      border-color: #475569;
+    }
+
+    /* Imagem principal do cartão */
+    .card-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+
+    /* Área de texto/legenda abaixo da foto */
+    .card-content {
+      padding: 16px;
+    }
+
+    .card-title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 4px;
+      color: #f8fafc;
+    }
+
+    .card-desc {
+      font-size: 0.85rem;
+      color: #94a3b8;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Título opcional -->
+  <h1 class="header-title">Destaques</h1>
+
+  <!-- Container com a sequência de cartões -->
+  <div class="feed-container">
+
+    <!-- Cartão 1 -->
+    <a href="https://seu-link-aqui.com" class="card" target="_blank">
+      <img src="foto1.jpg" alt="Descrição da imagem 1" class="card-image">
+      <div class="card-content">
+        <h2 class="card-title">Título da Postagem 1</h2>
+        <p class="card-desc">Uma breve legenda ou chamada para ação sobre esse item.</p>
+      </div>
+    </a>
+
+    <!-- Cartão 2 -->
+    <a href="https://seu-link-aqui.com" class="card" target="_blank">
+      <img src="foto2.jpg" alt="Descrição da imagem 2" class="card-image">
+      <div class="card-content">
+        <h2 class="card-title">Título da Postagem 2</h2>
+        <p class="card-desc">Clique para saber mais detalhes sobre este projeto.</p>
+      </div>
+    </a>
+
+    <!-- Cartão 3 -->
+    <a href="https://seu-link-aqui.com" class="card" target="_blank">
+      <img src="foto3.jpg" alt="Descrição da imagem 3" class="card-image">
+      <div class="card-content">
+        <h2 class="card-title">Título da Postagem 3</h2>
+        <p class="card-desc">Mais um cartão na sequência do feed.</p>
+      </div>
+    </a>
+
+  </div>
+
+</body>
+</html>
